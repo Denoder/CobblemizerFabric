@@ -4,8 +4,8 @@ import com.cobblemon.mod.common.entity.pokemon.PokemonEntity;
 import com.cobblemon.mod.common.pokemon.Pokemon;
 import git.dragomordor.cobblemizer.fabric.config.CobblemizerConfig;
 import git.dragomordor.cobblemizer.fabric.misc.TierRarityClass;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -13,9 +13,8 @@ import net.minecraft.util.ActionResult;
 public class FriendshipAddItem extends PokemonUseItem{
     private final String tier;
 
-
     public FriendshipAddItem(String tier) {
-        super(new FabricItemSettings().maxCount(1));
+        super(new Item.Settings().maxCount(1));
         this.tier = tier;
     }
 

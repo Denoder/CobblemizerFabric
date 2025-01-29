@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class CobblemizerItemGroups {
 
     public static final ItemGroup COBBLEMIZER_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(CobblemizerMod.MODID, "all_iv_maxer"),
+            Identifier.tryParse(CobblemizerMod.MODID + ":all_iv_maxer"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cobblemizer"))
                     .icon(() -> new ItemStack(CobblemizerItems.ALL_IV_MAXER)).entries((displayContext, entries) -> {
 

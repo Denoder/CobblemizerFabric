@@ -6,8 +6,8 @@ import com.cobblemon.mod.common.pokemon.IVs;
 import com.cobblemon.mod.common.pokemon.Pokemon;
 import git.dragomordor.cobblemizer.fabric.config.CobblemizerConfig;
 import git.dragomordor.cobblemizer.fabric.misc.TierRarityClass;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -17,7 +17,7 @@ public class IVAddItem extends PokemonUseItem {
     private final Stat statToBoost;
 
     public IVAddItem(String tier, Stat statToBoost) {
-        super(new FabricItemSettings().maxCount(1));
+        super(new Item.Settings().maxCount(1));
         this.tier = tier;
         this.statToBoost = statToBoost;
     }

@@ -4,7 +4,6 @@ import com.cobblemon.mod.common.api.interaction.PokemonEntityInteraction.Ownersh
 import com.cobblemon.mod.common.api.storage.StoreCoordinates;
 import com.cobblemon.mod.common.entity.pokemon.PokemonEntity;
 import com.cobblemon.mod.common.pokemon.Pokemon;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -14,7 +13,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 
 public abstract class PokemonUseItem extends Item {
-    public PokemonUseItem(FabricItemSettings arg) {
+    public PokemonUseItem(Settings arg) {
         super(arg);
     }
 
